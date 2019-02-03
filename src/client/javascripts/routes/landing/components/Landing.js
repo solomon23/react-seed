@@ -25,7 +25,7 @@ class LandingPage extends React.Component {
 
     return (
       <div>
-        Landing Pagess {data.message}
+        Landing Page {data.message}
       </div>
     )
   }

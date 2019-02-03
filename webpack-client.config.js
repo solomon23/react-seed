@@ -141,7 +141,6 @@ const clientConfig = {
     ],
   },
   plugins: [
-    new LiveReloadPlugin({ delay: 500 }),
     autoprefixer,
     new webpack.LoaderOptionsPlugin({
       // test: /\.xxx$/, // may apply this only for some modules
@@ -174,6 +173,10 @@ const clientConfig = {
       },
     }),
   ],
+}
+
+if (!PROD) {
+  clientConfig.plugins.push(new LiveReloadPlugin({ delay: 500 }))
 }
 
 /**
