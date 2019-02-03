@@ -1,0 +1,7 @@
+@import "./theme.scss";
+
+:global {
+  body {
+    font-family: $font-family;    
+  }
+}

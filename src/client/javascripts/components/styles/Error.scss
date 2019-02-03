@@ -1,0 +1,15 @@
+@import '../../../stylesheets/modules/theme.scss';
+
+.loader {
+  position: absolute;
+  left: calc(50% - 41px);
+  top: calc(50% - 41px);
+}
+
+.preLoader {
+  position:relative;
+  text-align:center;
+  font-size: 72px;
+  color: red;
+  z-index: 100;
+}
