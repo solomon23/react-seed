@@ -18,7 +18,7 @@
     "server:build": "webpack --config ./webpack-server.config.js --mode development -w",
     "server:watch": "cd ./dist && nodemon ./server",
     "server:local": "webpack-dev-server --mode development --config webpack-client.config --content-base ./dist/public/ --port 3030 --history-api-fallback",
-    "server:production": "pm2 start pm2.config.js --env production"
+    "server:production": "pm2 start --env production"
   },
   "jest": {
     "moduleNameMapper": {
